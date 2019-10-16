@@ -18,7 +18,7 @@ class Application:
 
     def open_home_page(self):
         wd = self.wd
-        wd.get("http://ya.ru/")
+        wd.get("http://localhost/litecart/")
 
     def destroy(self):
         self.wd.quit()
