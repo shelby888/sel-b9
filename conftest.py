@@ -1,5 +1,6 @@
 import pytest
 from fixture.application import Application
+from fixture.session import SessionHelper
 
 fixture = None
 
@@ -22,3 +23,9 @@ def stop(request):
         fixture.destroy()
     request.addfinalizer(fin)
     return fixture
+
+# @pytest.fixture
+# def admin(request):
+#     SessionHelper.admin_login()
+#
+#     return True
